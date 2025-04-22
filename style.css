@@ -20,8 +20,12 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background: url('images/HP_tobirae.png') no-repeat center top;
-    background-size: auto; /* 画像の元のサイズを使用 */
+    background: 
+        url('images/HP_tobirae.png') no-repeat center top,
+        url('images/tobirae_B.png') no-repeat center top; /* 2つ目の画像を追加 */
+    background-size: auto, auto; /* 両方の画像を元のサイズで表示 */
+    background-position: center top, center bottom; /* 1つ目は上部、2つ目は下部に配置 */
+    background-attachment: local, fixed; /* スクロールに合わせて動く */
     color: #333;
     scroll-behavior: smooth;
 }
