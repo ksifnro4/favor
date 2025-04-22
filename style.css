@@ -21,7 +21,7 @@ body {
     margin: 0;
     font-family: 'Arial', sans-serif;
     background: 
-        url('images/HP_tobirae.png') no-repeat center top,
+        url('images/HP_tobirae.png ') no-repeat center top,
         url('images/tobirae_B2.png') no-repeat center top; /* 2つ目の画像を追加 */
     background-size: auto, auto; /* 両方の画像を元のサイズで表示 */
     background-position: center top, center bottom; /* 1つ目は上部、2つ目は下部に配置 */
@@ -269,6 +269,7 @@ body {
 }
 
 .reason-card {
+    position: relative; /* 子要素の絶対位置を基準にする */
     display: flex;
     flex-direction: column;
     background-color: #f9f9f9;
@@ -281,6 +282,15 @@ body {
     border: 1px solid #e65a55;
 }
 
+.reason-card img {
+    height: 80%; /* 画像の幅を小さく設定 */
+    width: auto; /* アスペクト比を維持 */
+    position: absolute; /* カード内の右端に配置 */
+    top: 10px; /* 上からの位置を調整 */
+    right: 10px; /* 右端からの位置を調整 */
+    border-radius: 5px; /* 画像の角を少し丸くする */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 画像に軽い影を追加 */
+}
 .reason-card:hover {
     transform: translateY(-4px);
 }
