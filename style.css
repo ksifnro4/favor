@@ -3,36 +3,79 @@
 }
 
 .flow {
-    max-width: 800px; /* 適度な横幅 */
-    margin: 0 auto;   /* 中央寄せ */
+    max-width: 800px;
+    /* 適度な横幅 */
+    margin: 0 auto;
+    /* 中央寄せ */
     padding: 40px 20px;
-  }
-  
-  .flow-steps {
+}
+
+.flow-steps {
     display: flex;
     flex-direction: column;
     gap: 20px;
-  }
-  
+}
+
 
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background: #f4f4f4;
+    background: url('images/HP_tobirae.png') no-repeat center top;
+    background-size: auto; /* 画像の元のサイズを使用 */
     color: #333;
     scroll-behavior: smooth;
 }
 
 .navbar {
-    position: sticky;
+    display: flex;
+    justify-content: space-between; /* 左右に要素を分散 */
+    align-items: center; /* 縦方向の中央揃え */
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
     z-index: 1000;
     background: #e63946;
-    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
     display: flex;
-    justify-content: space-between;
+    gap: 20px; /* メニュー間のスペースを調整 */
+    margin: 0; /* 左寄せを解除 */
+}
+
+.toll-free {
+    display: flex;
     align-items: center;
-    padding: 20px;
+    gap: 10px; /* 画像と電話番号の間のスペース */
+}
+
+.toll-free img {
+    width: 70px; /* フリーダイヤル画像の幅を指定 */
+    height: auto; /* アスペクト比を維持 */
+}
+
+.phone-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.toll-free a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.toll-free a:hover {
+    text-decoration: underline;
+}
+
+.logo img {
+    width: 200px; /* ロゴの幅を指定 */
+    height: auto; /* アスペクト比を維持 */
 }
 
 .menu li {
@@ -46,7 +89,6 @@ body {
 }
 
 .hero {
-    background: url('https://ksifnro4.github.io/hp/images/1000_F_470780057_FHP84WXlkBVTrvQIuaPT6nTkZPmI0GDJ.jpg') no-repeat center center/cover; 
     height: 80vh;
     display: flex;
     align-items: center;
@@ -57,9 +99,9 @@ body {
 }
 
 .plans {
-    background: #e6f0fa;
     padding: 60px 20px;
     text-align: center;
+    border-top: 2px solid #818181; /* 上に線を追加 */
 }
 
 .plans h2 {
