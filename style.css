@@ -39,7 +39,8 @@ body {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: #e63946;
+    background: url('images/ueno_yatsu.png') no-repeat center center; /* 背景画像を設定 */
+    background-size: cover; /* 画像を全体にカバー */
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
