@@ -1,0 +1,22 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+#company-overview {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+#company-overview h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
