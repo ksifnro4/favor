@@ -23,7 +23,7 @@ body {
     background: 
         url('images/HP_tobirae.png ') no-repeat center top,
         url('images/tobirae_B2.png') no-repeat center top; /* 2つ目の画像を追加 */
-    background-size: auto, auto; /* 両方の画像を元のサイズで表示 */
+    background-size: 100% auto, auto; /* 両方の画像を元のサイズで表示 */
     background-position: center top, center bottom; /* 1つ目は上部、2つ目は下部に配置 */
     background-attachment: local, fixed; /* スクロールに合わせて動く */
     color: #333;
@@ -34,15 +34,14 @@ body {
     display: flex;
     justify-content: space-between; /* 左右に要素を分散 */
     align-items: center; /* 縦方向の中央揃え */
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: relative; /* 相対位置に変更 */
     width: 100%;
     z-index: 1000;
     background: url('images/ueno_yatsu2.png') no-repeat center center; /* 背景画像を設定 */
     background-size: cover; /* 画像を全体にカバー */
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px; /* 他の要素との間隔を追加 */
 }
 
 .menu {
