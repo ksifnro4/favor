@@ -1,19 +1,17 @@
 
-.flow {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 20px;
-}
-
-.flow-steps {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
 
 /*メイン*/
 
+body {
+    background: 
+        url('../images/HP_tobirae.png') no-repeat center top, /* 固有の背景画像 */
+        url('../images/tobirae_B2.png') no-repeat center bottom; /* 共通の背景画像 */
+    background-size: 100% auto, auto; /* 1つ目は横幅100%、2つ目は元のサイズ */
+    background-attachment: local, fixed; /* 1つ目はスクロール、2つ目は固定 */
+}
+
 .hero {
+    
     height: 80vh;
     display: flex;
     align-items: center;
