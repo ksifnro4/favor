@@ -96,9 +96,26 @@ footer p {
 
 /*メイン*/
 
+.minnnasima-link {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.minnnasima-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
 body {
     background: 
-        url('images/HP_tobirae.png') no-repeat center top, /* 固有の背景画像 */
+        url('images/minnnasima.png') no-repeat center top, /* 固有の背景画像 */
         url('images/tobirae_B2.png') no-repeat center bottom; /* 共通の背景画像 */
     background-size: 100% auto, auto; /* 1つ目は横幅100%、2つ目は元のサイズ */
     background-attachment: local, fixed; /* 1つ目はスクロール、2つ目は固定 */
